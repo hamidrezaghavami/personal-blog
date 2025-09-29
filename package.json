@@ -1,0 +1,26 @@
+{
+  "name": "personalblog",
+  "version": "1.0.0",
+  "description": "A full-featured personal blog built with Node.js, Express, and modern web technologies.",
+  "keywords": [
+    "pblog"
+  ],
+  "homepage": "https://github.com/hamidrezaghavami/personal-blog#readme",
+  "bugs": {
+    "url": "https://github.com/hamidrezaghavami/personal-blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidrezaghavami/personal-blog.git"
+  },
+  "license": "MIT",
+  "author": "Hamid Reza Ghavami",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
