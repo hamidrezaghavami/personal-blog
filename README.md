@@ -11,7 +11,6 @@ A full-featured personal blog built with **Node.js**, **Express**, and modern we
 - Responsive design
 - Markdown support for posts
 - Admin panel for managing content
-
 ---
 
 ## Tech Stack
