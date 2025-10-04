@@ -51,7 +51,7 @@ adminRouter.post('/new', (req, res) => {
 adminRouter.get('/edit/:id', (req, res) => { 
     const { id } = req.params;
     
-    res.redirect(`edit form from Article with ID: ${ id }`);
+    res.send(`edit form from Article with ID: ${ id }`);
 });
 
 adminRouter.post('/edit/:id', (req, res) => { 
