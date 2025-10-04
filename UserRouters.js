@@ -18,7 +18,7 @@ Router.get('/about', (req, res) => {
 // middleware for authentication for admin routers
 adminRouter.use((req, res, next) => { 
     const isLoggedIn = true;
-    if (!isLoggedIn) res.status(401).send("Not authorized");
+    if (!isLoggedIn) return res.status(401).send("Not authorized");
     next();
 });
 
