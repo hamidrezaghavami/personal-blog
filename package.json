@@ -18,7 +18,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^5.1.0"

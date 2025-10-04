@@ -30,6 +30,7 @@ adminRouter.get('/', (req, res) => {
 // create new article
 adminRouter.get('/new', (req, res) => { 
     console.log("newArticle");
+    res.send("Form to create a new article");
 });
 
 adminRouter.post('/new', (req, res) => {
@@ -74,7 +75,8 @@ adminRouter.post('/delete/:id', (req, res) => {
 
     console.log(`Article deleted: ${id}`);
 
-    res.redirect("/admin"); // back to dashboard 
+    // send a message to the client instead of redirecting
+    res.send(`Article with ${id} deleted successfully!`);
 });
 
 export { Router, adminRouter};
