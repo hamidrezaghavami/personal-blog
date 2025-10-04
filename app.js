@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/', Router);
-app.use('/', adminRouter);
+app.use('/admin', adminRouter);
 
 // Server initialisation: http://localhost:3000
 app.listen(PORT, () => {

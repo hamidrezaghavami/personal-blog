@@ -1,4 +1,4 @@
-import express from 'express';
+import express from "express";
 
 const Router = express.Router();
 const adminRouter = express.Router();
@@ -16,14 +16,14 @@ Router.get('/about', (req, res) => {
 });
 
 // middleware for authentication for admin routers
-Router.use((req, res, next) => { 
+adminRouter.use((req, res, next) => { 
     const isLoggedIn = true;
     if (!isLoggedIn) res.status(401).send("Not authorized");
     next();
 });
 
 // Admin DashBoard
-adminRouter.get('/admin', (req, res) => { 
+adminRouter.get('/', (req, res) => { 
     res.send('Admin Dashboard');
 });
 
