@@ -36,14 +36,7 @@ cd personal-blog
 npm install
 ```
 
-3. Set up environment variables (`.env` file):
-
-```env
-PORT=3000
-JWT_SECRET=your_jwt_secret
-```
-
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
